@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title -->
+  <title>Udeshya Stopwatch</title>
+
+  <!-- Meta Tags for SEO -->
+  <meta name="description" content="A stylish and interactive stopwatch web application built by Udeshya Raj using HTML, CSS, and JavaScript. Track time with precision and style.">
+  <meta name="author" content="Udeshya Raj">
+  <meta name="keywords" content="Stopwatch, Timer, Udeshya, Stylish Stopwatch, JavaScript Stopwatch, Web Stopwatch, HTML CSS JavaScript Project">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Optional: Favicon -->
+  <link rel="icon" href="icon.png" type="image/png" />
+
+
+
+</head>
+<body>
+  <main class="container" role="main" aria-label="Stopwatch Application">
+
+    <!-- Stopwatch Title -->
+    <header>
+      <h1>⏱ Udeshya Stopwatch</h1>
+    </header>
+
+    <!-- Optional Developer Quote -->
+    <p style="text-align: center; font-style: italic; margin-top: -10px; color: #cccccc;">
+      "Time is what we want most, but use worst. – William Penn"
+    </p>
+
+    <!-- Time Display -->
+    <section id="display" aria-live="polite" aria-atomic="true">
+      00:00:00.000
+    </section>
+
+    <!-- Control Buttons -->
+    <nav class="buttons" aria-label="Stopwatch Controls">
+      <button id="start" aria-label="Start Stopwatch">
+        <i class="fa-solid fa-play"></i> Start
+      </button>
+      <button id="pause" aria-label="Pause Stopwatch">
+        <i class="fa-solid fa-pause"></i> Pause
+      </button>
+      <button id="reset" aria-label="Reset Stopwatch">
+        <i class="fa-solid fa-rotate-left"></i> Reset
+      </button>
+      <button id="lap" aria-label="Record Lap Time">
+        <i class="fa-solid fa-flag"></i> Lap
+      </button>
+    </nav>
+
+    <!-- List of Laps -->
+    <section aria-label="Lap Times">
+      <ul id="laps"></ul>
+    </section>
+
+  </main>
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+</body>
+</html>

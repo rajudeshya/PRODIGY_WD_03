@@ -1,0 +1,101 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body background and centering */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #1f4037, #99f2c8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+/* Main container styling */
+.container {
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation for entry */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Heading and tagline */
+h1 {
+  font-size: 2.5rem;
+  color: #00ffd5;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #e0f7fa;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+/* Display timer text */
+#display {
+  font-size: 2.8rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #00ffcc;
+  margin: 30px 0;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 8px #00ffc8;
+}
+
+/* Buttons layout */
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Button styling */
+button {
+  background-color: #00bcd4;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0, 188, 212, 0.3);
+}
+
+button:hover:not(:disabled) {
+  background-color: #007d8c;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(0, 188, 212, 0.4);
+}
+
+button:disabled {
+  background-color: #777;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
