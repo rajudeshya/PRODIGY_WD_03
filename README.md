@@ -1,6 +1,6 @@
 🎮 Tic-Tac-Toe Game
 
-https://github.com/rajudeshya/PRODIGY_WD_03/
+ https://rajudeshya.github.io/PRODIGY_WD_03/
 
 🛠️ Developed by Udeshya Raj
 
